@@ -5,8 +5,7 @@ scomp_n = []
 
 cifra_uno = input('cifra uno: ')
 cifra_due = input('cifra due: ')
-n = input('N: ')
-
+n = int(input('N: '))+1
 
 def zero():
     if str(cifra_uno) in scomp_n or str(cifra_due) in scomp_n:
@@ -15,11 +14,11 @@ def zero():
         stop = len(scomp_n)
         del scomp_n[0:stop]
 
-for i in range(n+1):
+for i in range(n):
     i = str(i)
     scomp_n = list(i)
     zero()
     
-z = n-p
-print(p)
-
+z = n-int(p)
+print(f'Numeri senza {cifra_uno} e {cifra_due} con 0 inziale incluso: {z}')
+print(f'Numeri con {cifra_uno} e {cifra_due}: {p}')
