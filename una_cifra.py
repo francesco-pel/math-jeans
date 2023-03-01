@@ -4,7 +4,7 @@ p=0
 scomp_n = []
 
 cifra = input('cifra: ')
-n = input('N: ')
+n = int(input('N: '))+1
 
 
 def zero():
@@ -14,11 +14,10 @@ def zero():
         stop = len(scomp_n)
         del scomp_n[0:stop]
 
-for i in range(n+1):
+for i in range(n):
     i = str(i)
     scomp_n = list(i)
     zero()
     
 z = n-p
-print(p)
-
+print(z)
